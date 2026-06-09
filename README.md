@@ -1,143 +1,91 @@
-# AI Resume Screener
+# 🤖 AI Resume Screening System
 
-## Overview
+An AI-powered Applicant Tracking System (ATS) that screens and ranks resumes against job descriptions using Natural Language Processing (NLP).
 
-AI Resume Screener is a machine learning and NLP-based application that analyzes resumes and matches them against job descriptions. The system extracts skills, identifies keywords, and calculates a compatibility score to help recruiters and candidates evaluate job fit.
+## 🚀 Live Demo
 
----
+🔗 **Streamlit App:** https://deepak-ai-resume-screener.streamlit.app/
 
-## Features
+## 📂 GitHub Repository
 
-✅ Upload Resume (PDF)
+🔗 **GitHub:** https://github.com/DEEPAK2005-hub/ai-resume-screener
 
-✅ Extract Resume Text
+## ✨ Features
 
-✅ Analyze Skills and Keywords
+* 📄 Upload multiple resumes in PDF format
+* 📝 Compare resumes against job descriptions
+* 🤖 AI/NLP-based resume matching
+* 🎯 Calculate resume-job match scores
+* 🏆 Rank candidates automatically
+* ✅ Show matched skills
+* ❌ Identify missing skills
+* 📥 Download results as CSV
+* 🌐 Deployed on Streamlit Cloud
 
-✅ Compare Resume with Job Description
+## 🛠️ Technologies Used
 
-✅ Calculate Resume Match Score
+* Python
+* Streamlit
+* Pandas
+* NumPy
+* Scikit-learn
+* PyPDF2
+* Sentence Transformers
+* Git & GitHub
+* Streamlit Community Cloud
 
-✅ Display Missing Skills
+## 📦 Installation
 
-✅ Generate Candidate Evaluation Report
+### Clone the repository
 
----
-
-## Problem Statement
-
-Recruiters often receive hundreds of resumes for a single job opening. Manually reviewing every resume is time-consuming and inefficient.
-
-This project automates the screening process by using Natural Language Processing (NLP) techniques to identify relevant skills and compare resumes with job requirements.
-
----
-
-## Technologies Used
-
-### Programming Language
-- Python
-
-### Libraries
-- Pandas
-- NumPy
-- Scikit-learn
-- NLTK
-- spaCy
-- PyPDF2
-
-### Frontend
-- Streamlit
-
-### Machine Learning & NLP
-- TF-IDF Vectorization
-- Cosine Similarity
-- Keyword Extraction
-- Text Preprocessing
-
----
-
-## Project Workflow
-
-1. Upload Resume PDF
-2. Extract Resume Content
-3. Clean and Preprocess Text
-4. Extract Skills and Keywords
-5. Compare with Job Description
-6. Calculate Similarity Score
-7. Generate Screening Result
-
----
-
-## Sample Output
-
-Resume Match Score: 85%
-
-Matched Skills:
-- Python
-- Machine Learning
-- SQL
-- Data Analysis
-
-Missing Skills:
-- Docker
-- AWS
-
-Recommendation:
-Candidate is highly suitable for the role.
-
----
-
-## Project Structure
-
+```bash
+git clone https://github.com/DEEPAK2005-hub/ai-resume-screener.git
+cd ai-resume-screener
 ```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application locally
+
+```bash
+streamlit run app.py
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+## 📁 Project Structure
+
+```text
 ai-resume-screener/
 │
 ├── app.py
+├── matcher.py
 ├── resume_parser.py
 ├── skill_extractor.py
-├── matcher.py
 ├── requirements.txt
+├── test_ai_matcher.py
 ├── README.md
-│
-├── resumes/
-├── job_descriptions/
-└── models/
+└── .gitignore
 ```
 
----
+## 🎯 Future Improvements
 
-## Future Enhancements
+* Support DOCX resumes
+* Advanced NLP techniques
+* LLM-based candidate feedback
+* Interactive analytics dashboard
 
-- Multiple Resume Screening
-- Resume Ranking System
-- AI-Based Candidate Recommendations
-- Dashboard Analytics
-- Interview Question Suggestions
-- Resume Improvement Recommendations
+## 👨‍💻 Author
 
----
+**Deepak**
 
-## Learning Outcomes
-
-This project demonstrates:
-
-- Natural Language Processing (NLP)
-- Machine Learning Fundamentals
-- Text Similarity Analysis
-- PDF Data Extraction
-- Streamlit Application Development
-- Git & GitHub Project Management
-
----
-
-## Author
-
-Deepak HC
-
-B.Tech Computer Science Student
-
-Aspiring AI/ML Engineer
-
----
-
-⭐ If you find this project useful, consider giving it a star.
+* GitHub: https://github.com/DEEPAK2005-hub
+* Live Demo: https://deepak-ai-resume-screener.streamlit.app/
