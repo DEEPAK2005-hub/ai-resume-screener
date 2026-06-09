@@ -1,15 +1,29 @@
-import re
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
-def calculate_match_score(resume_text, job_description):
+model = SentenceTransformer(
+    "all-MiniLM-L6-v2"
+)
 
-    resume_words = set(re.findall(r'\w+', resume_text.lower()))
-    jd_words = set(re.findall(r'\w+', job_description.lower()))
+def calculate_match_score(
+    resume_text,
+    job_description
+):
 
-    if len(jd_words) == 0:
-        return 0
+    resume_embedding = model.encode(
+        [resume_text]
+    )
 
-    matched_words = resume_words.intersection(jd_words)
+    jd_embedding = model.encode(
+        [job_description]
+    )
 
-    score = (len(matched_words) / len(jd_words)) * 100
+    similarity = cosine_similarity(
+        resume_embedding,
+        jd_embedding
+    )[0][0]
 
-    return round(score, 2)
+    return round(
+        similarity * 100,
+        2
+    )
