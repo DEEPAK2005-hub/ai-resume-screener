@@ -1,16 +1,16 @@
-# 🤖 AI Resume Screening System
+#  AI Resume Screening System
 
 An AI-powered Applicant Tracking System (ATS) that screens and ranks resumes against job descriptions using Natural Language Processing (NLP).
 
-## 🚀 Live Demo
+##  Live Demo
 
 🔗 **Streamlit App:** https://deepak-ai-resume-screener.streamlit.app/
 
-## 📂 GitHub Repository
+##  GitHub Repository
 
 🔗 **GitHub:** https://github.com/DEEPAK2005-hub/ai-resume-screener
 
-## ✨ Features
+##  Features
 
 * 📄 Upload multiple resumes in PDF format
 * 📝 Compare resumes against job descriptions
@@ -22,7 +22,7 @@ An AI-powered Applicant Tracking System (ATS) that screens and ranks resumes aga
 * 📥 Download results as CSV
 * 🌐 Deployed on Streamlit Cloud
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Streamlit
@@ -34,7 +34,7 @@ An AI-powered Applicant Tracking System (ATS) that screens and ranks resumes aga
 * Git & GitHub
 * Streamlit Community Cloud
 
-## 📦 Installation
+##  Installation
 
 ### Clone the repository
 
@@ -61,7 +61,7 @@ Open:
 http://localhost:8501
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 ai-resume-screener/
@@ -76,14 +76,14 @@ ai-resume-screener/
 └── .gitignore
 ```
 
-## 🎯 Future Improvements
+##  Future Improvements
 
 * Support DOCX resumes
 * Advanced NLP techniques
 * LLM-based candidate feedback
 * Interactive analytics dashboard
 
-## 👨‍💻 Author
+##  Author
 
 **Deepak**
 
